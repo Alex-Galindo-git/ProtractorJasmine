@@ -1,0 +1,26 @@
+{
+  "name": "protractor-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conf.js",
+  "scripts": {
+    "webdriver-update": "webdriver-manager update",
+    "test": "npm protractor conf.js --suite header,home,footer",
+    "posttest": "del debug.log"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webdriver-manager": "^12.1.7"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "color-name": "^1.1.4",
+    "jasmine-spec-reporter": "^5.0.2",
+    "protractor": "^7.0.0",
+    "protractor-accessibility-plugin": "^0.3.0",
+    "protractor-testability-plugin": "^2.0.1",
+    "protractor-timeline-plugin": "^0.2.0",
+    "q": "^1.5.1"
+  }
+}
